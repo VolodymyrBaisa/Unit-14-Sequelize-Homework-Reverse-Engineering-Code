@@ -1,82 +1,44 @@
-# Unit-14-Sequelize-Homework-Reverse-Engineering-Code
-homework week 14
+## Reverse-Engineering
 
-------------------------------------------------------------------------------------------------------------------------------
+  This project is a walk through of a codebase that the user can use to create a new project with NPM,  Node, Passport, Sequelize and MySQL
 
---PASSWORD AUTHENTICATION--
 
-This app allows users to create an account, log into the account and sign back out securely. All user data is stored in a mysql
-database.
+## Installation
+To get a local copy up and running follow these simple steps.
 
-------------------------------------------------------------------------------------------------------------------------------
+download repo from Gitlab (or similar), check and update code in VS code, test in terminal. Create databases in MySQL. Test database function in MySQL. Run and test browser functions (including server) in Google Chrome)
 
---USER STORY--
+Prerequisites
+This is an example of how to list things you need to use the software and how to install them.
 
-as someone who wants to safely log in to "X", I want to know my personal details are safely stored so that I dont have to worry
-about using "X".
+Installation-
+  Clone the repo
+    git clone https://github.com/VolodymyrBaisa/Unit-14-Sequelize-Homework-Reverse-Engineering-Code.git
+  Install NPM packages
+    npm i
+  Then open index.js file in console log and run
+    node index.js
+  You will be taken through a series of questions (user prompts) which will then lead to the generation of your new readme.md file!
 
-------------------------------------------------------------------------------------------------------------------------------
+## Usage
 
---TECH USED --
+This project can be used for undefined. Code examples and demos work well in this space. You may also link to more resources.
 
--BCRYPTJS
--EXPRESS
--EXPRESS-SESSION
--MYSQL2
--PASSPORT
--PASSPORT-LOCAL
--SEQUELIZE
+For more examples, please refer to the Documentation
 
-------------------------------------------------------------------------------------------------------------------------------
+## Tests
 
---GETTING STARTED--
-
-to begin using this app, please clone this repository into your local storage. Once this is complete, please follow these steps;
-
-1)create a mysql db called "passport_demo"
-2)go into the config file, open config.js and insert your personal data ie username, password etc
-3)open terminal in current repo and run "npm i" to install all node packages
-4)while in terminal, run "node server.js" and you will successfully connect to server
-5)open browser and put "http://localhost:8080" in search bar
-6)enjoy using the app!
-
-------------------------------------------------------------------------------------------------------------------------------
-
---FILES EXPLAINED--
-
-CONFIG
-
-  MIDDLEWARE
-  
-    isAuthenticated.js { 
-    restricts routes that user is not allowed to visit if not logged in. if user is logged in, it continues with request };
-    
-  config.json {
-  connection configuration to connect to server };
-  
-  passport.js {
-  contains javascript logic that tells passport we want to log in with an email address and password };
+See the open issues for a list of proposed features (and known issues). Testing completed and any known issues include the following:
+ Testing is completed in VS Code (Problems Console), Integrated Terminal within VS Code, MySQL database and Chrome Browser. No known issues.
  
-MODELS
+ Extensive walk through of Tutorial detailed in Google Drive link: https://docs.google.com/document/d/1hd1cs7xCL9as0nXoxffNk-ayFtmFS81pJHsRpfFUff4/edit?usp=sharing 
+ 
+## License
 
-  index.js {
-  connects to database and imports users log in data };
-  
-  user.js {
-  requires "bcrypt" for password hashing. this makes our database secure even if compromised. Here we have JS that defines what is stored on our database };
-  
-ROUTES
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-  api-routes.js { 
-  contains routes for signing in, logging out and getting users specific data to be displayed client side };
-  
-  html-routes.js {
-  routes that check whether user is signed in, whether user already has account etc and sends them tio the correct html page };
-  
-package.json {
-contains all package info, node modules used, version info etc };
+## Contact
 
-server.js {
-requires packages, sets up PORT, creates express and middleware, creates routes and syncs database / logs message in terminal on successful connection to server };
+Your Name - biosvova@gmail.com
 
-------------------------------------------------------------------------------------------------------------------------------
+Project Link: https://github.com/VolodymyrBaisa/Unit-14-Sequelize-Homework-Reverse-Engineering-Code
